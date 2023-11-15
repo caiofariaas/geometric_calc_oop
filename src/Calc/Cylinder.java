@@ -19,7 +19,7 @@ public class Cylinder {
 
     @Override
     public String toString() {
-        String txt = "\n" + Circle.class.getSimpleName() + " info!\n";
+        String txt = "\n" + Cylinder.class.getSimpleName() + " info!\n";
         return String.format(txt + "Radius: %.2f\nHeight: %.2f\nArea: %.2f\nVolume: %.2f", this.radius, this.height ,areaCalc(), volumeCalc());
     }
 }
