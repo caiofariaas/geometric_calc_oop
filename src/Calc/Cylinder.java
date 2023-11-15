@@ -16,4 +16,10 @@ public class Cylinder {
     public double areaCalc(){
         return 2 * Math.PI * this.radius * (this.radius + this.height);
     }
+
+    @Override
+    public String toString() {
+        String txt = "\n" + Circle.class.getSimpleName() + " info!\n";
+        return String.format(txt + "Radius: %.2f\nHeight: %.2f\nArea: %.2f\nVolume: %.2f", this.radius, this.height ,areaCalc(), volumeCalc());
+    }
 }

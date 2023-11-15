@@ -14,4 +14,10 @@ public class Square {
     public double perimeterCalc(){
         return this.side * 4;
     }
+
+    @Override
+    public String toString() {
+        String txt = "\n" + Circle.class.getSimpleName() + " info!\n";
+        return String.format(txt + "Side: %.2f\nArea: %.2f\nPerimeter: %.2f", this.side,areaCalc(), perimeterCalc());
+    }
 }

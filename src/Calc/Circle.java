@@ -14,4 +14,10 @@ public class Circle {
     public double perimeterCalc(){
         return 2 * Math.PI * this.radius;
     }
+
+    @Override
+    public String toString() {
+        String txt = "\n" + Circle.class.getSimpleName() + " info!\n";
+        return String.format(txt + "Radius: %.2f\nArea: %.2f\nPerimeter: %.2f", this.radius, areaCalc(), perimeterCalc());
+    }
 }
